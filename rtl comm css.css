@@ -8,6 +8,16 @@
 ::selection {
   color: #020203;
 }
+/*Feed commponent CSS*/
+
+.forceChatterFeed .skip-feed-wrapper {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.forceChatterFeedItem .cuf-body {
+  pointer-events: none !important;
+}
 
 /*NewsTicker Close Button CSS*/
 .slds-alert_warning .slds-icon,
@@ -18,6 +28,7 @@
 
 /* Hilfe center - Styling of the trending articles component */
 
+/* Tabset component CSS */
 .forceCommunityTabset.uiTabset > .uiTabBar {
   padding-right: 20px;
 }
@@ -59,6 +70,7 @@
   margin-left: 24px !important;
 }
 
+/*articles component*/
 .selfServiceTopicRelatedArticle {
   margin-bottom: 100px;
   padding-right: 20px;
@@ -108,7 +120,7 @@
   font-size: 17px;
   color: #020203;
   font-weight: 400;
-  white-space: wrap;
+  white-space: pre-wrap;
 }
 
 .selfServiceTopicArticleList .slds-button {
@@ -169,6 +181,11 @@
 @media only screen and (max-width: 375px) {
   .selfServiceTopicArticleList .selfServiceArticleListItem .article-head {
     font-size: 16px;
+  }
+
+  .selfServiceTopicArticleList .slds-button {
+    margin-left: 14px !important;
+    width: 150px !important;
   }
 
   .selfServiceTopicArticleList .selfServiceArticleListItem {
