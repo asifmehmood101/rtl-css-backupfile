@@ -1,0 +1,463 @@
+@font-face {
+  font-family: 'RTLUnitedText';
+  src: url('/sfsites/c/resource/RTLUnitedText') format('woff');
+}
+
+/* change global selection color*/
+
+::selection {
+  color: #020203;
+}
+
+/*NewsTicker Close Button CSS*/
+.slds-alert_warning .slds-icon,
+.slds-alert_warning .slds-button__icon {
+  fill: #fff !important;
+  width: 20px !important;
+}
+
+/* Hilfe center - Styling of the trending articles component */
+
+.forceCommunityTabset.uiTabset > .uiTabBar {
+  padding-right: 20px;
+}
+
+.forceCommunityTabset.uiTabset > .uiTabBar .tabs__nav {
+  border-bottom: 2px solid #d8dadd;
+  margin-bottom: 48px;
+}
+
+.forceCommunityTabset.uiTabset > .uiTabBar .uiTabItem {
+  font-size: 16px;
+  font-weight: 400;
+  transform: translateY(1.5px);
+}
+
+.forceCommunityTabset > .uiTabBar .uiTabItem .tabHeader {
+  color: #6a6d71 !important;
+  padding: 20px 0 !important;
+}
+
+.forceCommunityTabset > .uiTabBar .uiTabItem.active .tabHeader {
+  color: #020203 !important;
+  border-color: #020203;
+}
+
+.forceCommunityTabset > .uiTabBar .uiTabItem .tabHeader:focus {
+  box-shadow: none;
+}
+
+.forceCommunityTabset > .uiTabBar .uiTabItem .tabHeader:hover {
+  border-color: #d8dadd;
+}
+
+.forceCommunityTabset > .uiTabBar .uiTabItem.active .tabHeader:hover {
+  border-color: #020203;
+}
+
+.forceCommunityTabset.uiTabset > .uiTabBar .tabs__item + .tabs__item {
+  margin-left: 24px !important;
+}
+
+.selfServiceTopicRelatedArticle {
+  margin-bottom: 100px;
+  padding-right: 20px;
+}
+
+.selfServiceTopicRelatedArticle .headerLabel {
+  display: block;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: #020203 !important;
+  margin-bottom: 40px !important;
+}
+
+.selfServiceTopicArticleList .selfServiceArticleListItem {
+  border-bottom: 1px solid #d8dadd;
+  margin-bottom: 0;
+}
+
+.selfServiceTopicArticleList .selfServiceArticleListItem .article-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selfServiceArticleListItem .article-link:focus .article-head,
+.selfServiceArticleListItem .article-link:hover .article-head {
+  color: #020203 !important;
+}
+
+.selfServiceTopicArticleList .selfServiceArticleListItem .article-link::after {
+  content: '\2192';
+  display: inline-block;
+  color: #020203;
+  font-size: 24px;
+}
+
+.selfServiceTopicArticleList .selfServiceArticleListItem:first-child {
+  border-top: 1px solid #d8dadd !important;
+}
+
+.selfServiceTopicArticleList .selfServiceArticleListItem:last-child {
+  margin-bottom: 24px !important;
+}
+
+.selfServiceTopicArticleList .selfServiceArticleListItem .article-head {
+  margin-bottom: 0;
+  font-size: 17px;
+  color: #020203;
+  font-weight: 400;
+  white-space: wrap;
+}
+
+.selfServiceTopicArticleList .slds-button {
+  position: relative;
+  margin: unset !important;
+  background-color: #fff;
+  border: 1px solid #a8aaaf;
+  border-radius: 0 !important;
+  color: transparent;
+  font-size: 17px;
+  width: 180px;
+  height: 48px;
+}
+
+.selfServiceTopicArticleList .slds-button::before {
+  position: absolute;
+  content: 'Mehr anzeigen';
+  color: #020203;
+  font-size: 17px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1024px) {
+  .selfServiceTopicArticleList .slds-button {
+    margin-left: 20px !important;
+  }
+
+  .selfServiceTopicRelatedArticle .headerLabel {
+    margin-left: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .selfServiceTopicArticleList .slds-button {
+    margin-left: 20px !important;
+    width: 150px !important;
+  }
+
+  .selfServiceTopicRelatedArticle {
+    padding-right: 0;
+  }
+
+  .forceCommunityTabset.uiTabset > .uiTabBar {
+    padding-right: 0;
+  }
+
+  .selfServiceTopicRelatedArticle .headerLabel {
+    font-size: 24px !important;
+  }
+}
+
+/* Article Tab CSS*/
+.selfServiceArticleListItem .footer {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .selfServiceTopicArticleList .selfServiceArticleListItem .article-head {
+    font-size: 16px;
+  }
+
+  .selfServiceTopicArticleList .selfServiceArticleListItem {
+    margin: 0 14px !important;
+  }
+}
+
+/* Hero Section CSS*/
+
+@media only screen and (max-width: 615px) {
+  .hero .content {
+    margin-top: 38px !important;
+  }
+}
+
+/*slider css */
+
+/*Desktop breakpoint */
+.notInterestedLink {
+  display: none !important;
+}
+
+.forceAsyncCarouselIndicator.dot-mode ul li {
+  width: unset !important;
+}
+
+.forceChatterRecommendationCarouselWidget .uiButton.forceActionButton {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  padding: 0 0;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+.arrowContainer {
+  margin-top: 7px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.arrowLeft,
+.arrowRight {
+  background-color: #fff;
+  border: none;
+}
+
+.arrowRight svg path {
+  fill: #17181a !important;
+}
+
+.arrowLeft svg path {
+  fill: #d8dadd !important;
+}
+
+.forceChatterRecommendationBig {
+  position: relative;
+  text-align: left !important;
+  max-width: 90rem !important; /* disccus later with max*/
+  min-height: 436px;
+}
+
+.forceChatterRecommendationBig .cuf-recommendationIcon {
+  padding-bottom: 0 !important;
+}
+
+.cuf-recommendationSummary {
+  position: absolute;
+  bottom: 0;
+  width: 48%;
+}
+
+.forceCommunityRecommendations {
+  padding-bottom: 6rem;
+}
+
+.cuf-center.cuf-recommendationDisplayLabel {
+  text-align: left;
+  width: 48%;
+}
+
+.cuf-recommendationIcon.cuf-center {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 48%;
+}
+
+/*Header Text*/
+.forceChatterRecommendationBig .cuf-recommendationDisplayLabel .uiOutputText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  color: #020203;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 38px;
+}
+
+.forceChatterRecommendationBig .cuf-recommendationSummary .uiOutputText {
+  font-size: 1.063rem;
+  line-height: 24px;
+  color: #515258;
+}
+/*img container*/
+.forceChatterRecommendationBig .cuf-appImage {
+  object-fit: cover;
+  height: 100%;
+  max-width: 100% !important;
+  max-height: unset !important;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.forceCommunityRecommendations .rec-cardHeader {
+  opacity: 0;
+}
+
+.forceAsyncCarouselIndicator {
+  background-color: #050505 !important;
+}
+
+.forceAsyncCarouselIndicator .nav-container {
+  background-color: #fff;
+}
+
+.forceChatterRecommendationBig .cuf-recommendationSummary .uiOutputText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.forceAsyncCarouselIndicator .nav-container {
+  height: unset;
+  gap: 15px;
+}
+
+.forceChatterRecommendationCarousel
+  .forceAsyncCarouselIndicator
+  .dot-indicator {
+  width: 96px !important;
+  height: 2px !important;
+  border-radius: 1px !important;
+  left: unset;
+}
+.forceChatterRecommendationCarousel
+  .forceAsyncCarouselIndicator
+  .dot-indicator:focus {
+  outline: none !important;
+}
+
+.forceChatterRecommendationCarousel
+  .forceAsyncCarouselIndicator
+  .dot-indicator {
+  background-color: #d8dadd !important;
+}
+
+.indicator-supressed .forceAsyncCarouselIndicator .tab.selected .dot-indicator {
+  background: #17181a !important;
+}
+
+/*laptop breakpoint*/
+@media only screen and (max-width: 1088px) {
+  .forceChatterRecommendationBig {
+    min-height: 292.51px;
+  }
+
+  .forceChatterRecommendationBig .cuf-recommendationDisplayLabel .uiOutputText {
+    font-size: 2rem;
+    line-height: 37px;
+  }
+
+  .forceChatterRecommendationCarousel
+    .forceAsyncCarouselIndicator
+    .dot-indicator {
+    width: 60px !important;
+  }
+}
+
+/*tablet breakpoint*/
+@media only screen and (max-width: 896px) {
+  .arrowContainer {
+    display: none;
+  }
+
+  .forceChatterRecommendationBig {
+    min-height: 243px;
+  }
+
+  .forceCommunityRecommendations {
+    padding-bottom: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 672px) {
+  .forceChatterRecommendationBig {
+    min-height: 182.26px;
+  }
+
+  .forceChatterRecommendationCarousel
+    .forceAsyncCarouselIndicator
+    .dot-indicator {
+    width: 48px !important;
+  }
+  .forceCommunityRecommendations {
+    padding-bottom: 4rem;
+  }
+}
+
+/*large mobile*/
+/*Mobile breakpoint*/
+@media only screen and (max-width: 550px) {
+  .forceChatterRecommendationCarouselWidget.forceCommunityRecommendations.loaded {
+    margin-left: 0 !important;
+  }
+
+  .forceCommunityRecommendations {
+    padding-bottom: 3.5rem;
+  }
+
+  .cuf-center.cuf-recommendationDisplayLabel {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .cuf-recommendationSummary {
+    all: unset;
+  }
+
+  .cuf-recommendationIcon.cuf-center {
+    all: unset;
+  }
+
+  .forceChatterRecommendationBig .cuf-recommendationDisplayLabel .uiOutputText {
+    font-size: 1.5rem;
+  }
+
+  .forceChatterRecommendationBig .cuf-appImage {
+    margin-bottom: 24px !important;
+  }
+
+  .forceCommunityRecommendations
+    .forceChatterRecommendationBase
+    .cuf-recommendationDisplayLabel {
+    font-size: 2rem;
+    text-align: left;
+    color: white;
+  }
+
+  .forceChatterRecommendationBig .cuf-recommendationSummary {
+    text-align: left;
+    color: grey;
+    margin-bottom: 16px;
+  }
+
+  .forceChatterRecommendationBig .cuf-viewableActions {
+    text-align: left;
+  }
+
+  .forceChatterRecommendationCarouselWidget {
+    position: relative;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: auto;
+    height: 394px;
+  }
+
+  .forceChatterRecommendationBig .cuf-appImage {
+    object-fit: cover;
+    max-height: 162px !important;
+    height: 162px;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .forceCommunityRecommendations .rec-cardHeader {
+    display: none;
+  }
+
+  .forceChatterRecommendationBig .cuf-recommendationSummary .uiOutputText {
+    line-height: 19.55px;
+  }
+}
